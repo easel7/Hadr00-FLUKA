@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00/build-fluka/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
