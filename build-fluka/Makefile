@@ -60,10 +60,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00
+CMAKE_SOURCE_DIR = /Users/xiongzheng/software/Hadr00-FLULA
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00/build-fluka
+CMAKE_BINARY_DIR = /Users/xiongzheng/software/Hadr00-FLULA/build-fluka
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,9 +135,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00/build-fluka/CMakeFiles /Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00/build-fluka//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles /Users/xiongzheng/software/Hadr00-FLULA/build-fluka//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiongzheng/software/geant4/examples/extended/hadronic/Hadr00/build-fluka/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

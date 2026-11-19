@@ -11,7 +11,7 @@ option(G4_USE_FLUKA "Use the FLUKA hadron-inelastic interface" OFF)
 if(G4_USE_FLUKA)
   add_compile_definitions(G4_USE_FLUKA)
   list(APPEND CMAKE_MODULE_PATH
-       ${PROJECT_SOURCE_DIR}/../../../../cmake/Modules)
+       /Users/xiongzheng/software/geant4/cmake/Modules)
   find_package(FLUKAInterface REQUIRED)
 endif()
 

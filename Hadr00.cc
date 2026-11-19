@@ -62,87 +62,8 @@
 #include "Randomize.hh"
 
 #ifdef G4_USE_FLUKA
-#  include "FLUKAParticleTable.hh"
-#  include "FLUKAHadronInelasticPhysicsConstructor.hh"
-#  include "FLUKAInelasticScatteringXS.hh"
-#  include "FLUKANuclearInelasticModel.hh"
-#  include "G4Alpha.hh"
-#  include "G4Deuteron.hh"
-#  include "G4He3.hh"
-#  include "G4PhysicsListHelper.hh"
-#  include "G4Triton.hh"
-#  include "G4IonConstructor.hh"
-#  include "G4SystemOfUnits.hh"
-#  include "build_G4_process_helpers.hh"
+#  include "G4_HP_CernFLUKAHadronInelastic_PhysicsList.hh"
 #  include "fluka_interface.hh"
-#endif
-
-#ifdef G4_USE_FLUKA
-namespace
-{
-// Mirror the FLUKA light-ion setup in Hadr03: Geant4's G4IonPhysics uses its
-// own ion-inelastic models, so replace it for d, t, He3, and alpha.
-class FLUKALightIonPhysics final : public G4VPhysicsConstructor
-{
-  public:
-    FLUKALightIonPhysics() : G4VPhysicsConstructor("FLUKA light-ion inelastic") {}
-
-    void ConstructParticle() override
-    {
-      G4IonConstructor ionConstructor;
-      ionConstructor.ConstructParticle();
-    }
-
-    void ConstructProcess() override
-    {
-      // At this point all particles have been constructed, so the FLUKA/G4
-      // conversion table includes the light ions before any cross section is
-      // queried.
-      fluka_particle_table::initialize();
-
-      auto* helper = G4PhysicsListHelper::GetPhysicsListHelper();
-      auto* crossSection = new FLUKAInelasticScatteringXS();
-      auto* model = new FLUKANuclearInelasticModel();
-
-      build_G4_process_helpers::buildInelasticProcess(G4Deuteron::Deuteron(), helper,
-                                                      crossSection, model);
-      build_G4_process_helpers::buildInelasticProcess(G4Triton::Triton(), helper,
-                                                      crossSection, model);
-      build_G4_process_helpers::buildInelasticProcess(G4He3::He3(), helper,
-                                                      crossSection, model);
-      build_G4_process_helpers::buildInelasticProcess(G4Alpha::Alpha(), helper,
-                                                      crossSection, model);
-    }
-};
-
-class Hadr00FLUKAPhysicsList final : public G4VModularPhysicsList
-{
-  public:
-    Hadr00FLUKAPhysicsList()
-    {
-      SetVerboseLevel(1);
-      defaultCutValue = 0.7 * mm;
-
-      RegisterPhysics(new G4EmLivermorePhysics(1));
-      RegisterPhysics(new G4EmExtraPhysics(1));
-      RegisterPhysics(new G4DecayPhysics(1));
-      RegisterPhysics(new G4RadioactiveDecayPhysics(1));
-      RegisterPhysics(new G4HadronElasticPhysicsHP(1));
-      RegisterPhysics(new FLUKAHadronInelasticPhysicsConstructor(1));
-      RegisterPhysics(new G4IonElasticPhysics(1));
-      RegisterPhysics(new FLUKALightIonPhysics());
-      RegisterPhysics(new G4StoppingPhysics(1));
-
-      fluka_interface::initialize(true, true);
-    }
-
-    void SetCuts() override
-    {
-      SetCutsWithDefault();
-      SetCutValue(0., "proton");
-    }
-};
-}  // namespace
 #endif
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -190,7 +111,7 @@ int main(int argc, char** argv)
   // name for a Geant4 reference list still selects that list instead.
 #ifdef G4_USE_FLUKA
   if (physName.empty() || physName == "G4_HP_CernFLUKAHadronInelastic") {
-    phys = new Hadr00FLUKAPhysicsList();
+    phys = new G4_HP_CernFLUKAHadronInelastic_PhysicsList();
   }
   else if (factory.IsReferencePhysList(physName)) {
     phys = factory.GetReferencePhysList(physName);
@@ -198,7 +119,7 @@ int main(int argc, char** argv)
   else {
     G4cerr << "Unknown physics list '" << physName
            << "'; using G4_HP_CernFLUKAHadronInelastic." << G4endl;
-    phys = new Hadr00FLUKAPhysicsList();
+    phys = new G4_HP_CernFLUKAHadronInelastic_PhysicsList();
   }
 #else
   // Preserve the standard Geant4 default when FLUKA support was not compiled.
