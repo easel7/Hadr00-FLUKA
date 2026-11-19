@@ -15632,3 +15632,879 @@ events:
         - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
         - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:25 (find_package)"
+    name: "Geant4"
+    components:
+      -
+        name: "ui_all"
+        required: true
+        found: true
+      -
+        name: "vis_all"
+        required: true
+        found: true
+    configs:
+      -
+        filename: "Geant4.cps"
+        kind: "cps"
+      -
+        filename: "geant4.cps"
+        kind: "cps"
+      -
+        filename: "Geant4Config.cmake"
+        kind: "cmake"
+      -
+        filename: "geant4-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Geant4"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cmake/Geant4/Geant4Config.cmake"
+      mode: "config"
+      version: "11.4.3"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3"
+      ENV{PATH}:
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/anaconda3/bin"
+        - "/opt/homebrew/anaconda3/condabin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+      CMAKE_MODULE_PATH:
+        - "/Users/xiongzheng/software/geant4/cmake/Modules"
+        - "/opt/homebrew/lib/cmake/Qt6"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:25 (find_package)"
+    name: "Geant4"
+    components:
+      -
+        name: "ui_all"
+        required: true
+        found: true
+      -
+        name: "vis_all"
+        required: true
+        found: true
+    configs:
+      -
+        filename: "Geant4.cps"
+        kind: "cps"
+      -
+        filename: "geant4.cps"
+        kind: "cps"
+      -
+        filename: "Geant4Config.cmake"
+        kind: "cmake"
+      -
+        filename: "geant4-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Geant4"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cmake/Geant4/Geant4Config.cmake"
+      mode: "config"
+      version: "11.4.3"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3"
+      ENV{PATH}:
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/anaconda3/bin"
+        - "/opt/homebrew/anaconda3/condabin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+      CMAKE_MODULE_PATH:
+        - "/Users/xiongzheng/software/geant4/cmake/Modules"
+        - "/opt/homebrew/lib/cmake/Qt6"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:25 (find_package)"
+    name: "Geant4"
+    components:
+      -
+        name: "ui_all"
+        required: true
+        found: true
+      -
+        name: "vis_all"
+        required: true
+        found: true
+    configs:
+      -
+        filename: "Geant4.cps"
+        kind: "cps"
+      -
+        filename: "geant4.cps"
+        kind: "cps"
+      -
+        filename: "Geant4Config.cmake"
+        kind: "cmake"
+      -
+        filename: "geant4-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Geant4"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/Hadr00-FLULA/build-fluka/CMakeFiles/pkgRedirects/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/opt/python@3.15/libexec/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/fluka4-5.2/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/Geant4Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/geant4-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib64/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/Geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/share/cps/geant4.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/cmake/Geant4/Geant4Config.cmake"
+      mode: "config"
+      version: "11.4.3"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/lib/Geant4-11.4.3"
+      ENV{PATH}:
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/opt/python@3.15/libexec/bin"
+        - "/Users/xiongzheng/software/fluka4-5.2/bin"
+        - "/Users/xiongzheng/software/build/geant4-v11.4.3-install/bin"
+        - "/opt/homebrew/opt/qt/bin"
+        - "/opt/homebrew/opt/root/bin"
+        - "/opt/homebrew/anaconda3/bin"
+        - "/opt/homebrew/anaconda3/condabin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/opt/homebrew/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+      CMAKE_MODULE_PATH:
+        - "/Users/xiongzheng/software/geant4/cmake/Modules"
+        - "/opt/homebrew/lib/cmake/Qt6"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/opt/homebrew/lib/cmake/Qt6/3rdparty/kwin"
+...
